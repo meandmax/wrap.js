@@ -27,9 +27,7 @@ npm test
 ```js
     import wrap from 'wrap.js';
 
-    const wrapValue = wrap(4);
-
-    [1,2,3,4,5].map(limiter); // [1,2,3,0,1]
+    [1,2,3,4,5].map(wrap(4)); // [1,2,3,0,1]
 ```
 
 Can be used with frp libraries (e.g. [Bacon.js](https://github.com/baconjs/bacon.js), [RxJS](https://github.com/Reactive-Extensions/RxJS), [Kefir.js](https://github.com/pozadi/kefir)). Examples are written with Bacon.js
