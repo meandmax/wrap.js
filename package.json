@@ -1,0 +1,37 @@
+{
+  "name": "wrap.js",
+  "version": "0.0.0",
+  "description": "Returns a function that wraps input values such that [0 <= x < size].",
+  "main": "index.js",
+  "browser": "index.js",
+  "scripts": {
+    "test": "node test/test.main.js | tap-spec",
+    "patch": "npm version patch && npm publish",
+    "minor": "npm version minor && npm publish",
+    "major": "npm version major && npm publish",
+    "postpublish": "git push origin master --follow-tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meandmax/wrap.js.git"
+  },
+  "keywords": [
+    "higher",
+    "order",
+    "function",
+    "limit",
+    "wrap",
+    "es6"
+  ],
+  "author": "meandmax <info@maximimilian-heinz.de> (http://maximilian-heinz.de/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meandmax/wrap.js/issues"
+  },
+  "homepage": "https://github.com/meandmax/wrap.js",
+  "devDependencies": {
+    "babel": "latest",
+    "tap-spec": "latest",
+    "tape": "latest"
+  }
+}
