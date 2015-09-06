@@ -1,6 +1,6 @@
 {
   "name": "wrap.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Returns a function that wraps input values such that [0 <= x < size].",
   "main": "lib/index.js",
   "scripts": {
