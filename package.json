@@ -13,7 +13,7 @@
     "coverage": "babel-node node_modules/.bin/isparta cover test/*.js",
     "coveralls": "npm run coverage && coveralls < coverage/lcov.info",
     "postcoveralls": "rimraf ./coverage",
-    "prebuild": "npm run clean",
+    "prebuild": "npm run clean && npm run lint && npm run test",
     "build": "babel index.js --out-file lib/index.js",
     "postpublish": "git push origin master --follow-tags"
   },
